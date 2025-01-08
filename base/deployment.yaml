@@ -65,7 +65,7 @@ spec:
               valueFrom:
                 secretKeyRef:
                   name: grafana-secret
-                  key: github-sso-client_secret
+                  key: github-sso-client-secret
             - name: GF_AUTH_GITHUB_AUTO_LOGIN
               value: "true"
       volumes:
