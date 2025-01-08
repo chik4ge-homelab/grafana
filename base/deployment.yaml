@@ -56,7 +56,7 @@ spec:
             - name: GF_SERVER_ENABLE_GZIP
               value: "true"
             - name: GF_AUTH_DISABLE_LOGIN_FORM
-              value: "true"
+              value: "false"
             - name: GF_AUTH_GITHUB_ENABLED
               value: "true"
             - name: GF_AUTH_GITHUB_CLIENT_ID
@@ -73,7 +73,7 @@ spec:
             - name: GF_AUTH_GITHUB_API_URL
               value: https://api.github.com/user
             - name: GF_AUTH_GITHUB_AUTO_LOGIN
-              value: "true"
+              value: "false"
       volumes:
         - name: grafana-pv
           persistentVolumeClaim:
