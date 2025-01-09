@@ -55,6 +55,20 @@ spec:
               value: https://grafana.chik4ge.me
             - name: GF_SERVER_ENABLE_GZIP
               value: "true"
+            - name: GF_DATABASE_TYPE
+              value: mysql
+            - name: GF_DATABASE_HOST
+              value: mycluster
+            - name: GF_DATABASE_USER
+              valueFrom:
+                secretKeyRef:
+                  name: grafana-secret
+                  key: mysql-user
+            - name: GF_DATABASE_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: grafana-secret
+                  key: mysql-password
             - name: GF_AUTH_DISABLE_LOGIN_FORM
               value: "true"
             - name: GF_AUTH_GITHUB_ENABLED
