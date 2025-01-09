@@ -87,7 +87,3 @@ spec:
               value: https://github.com/login/oauth/access_token
             - name: GF_AUTH_GITHUB_API_URL
               value: https://api.github.com/user
-      volumes:
-        - name: grafana-pv
-          persistentVolumeClaim:
-            claimName: grafana-pvc
