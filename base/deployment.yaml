@@ -48,9 +48,6 @@ spec:
             requests:
               cpu: 250m
               memory: 750Mi
-          volumeMounts:
-            - mountPath: /var/lib/grafana
-              name: grafana-pv
           env:
             - name: GF_SERVER_ROOT_URL
               value: https://grafana.chik4ge.me
