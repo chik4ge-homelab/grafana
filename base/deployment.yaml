@@ -86,3 +86,5 @@ spec:
               value: https://api.github.com/user
             - name: GF_AUTH_GITHUB_ALLOW_ASSIGN_GRAFANA_ADMIN
               value: "true"
+            - name: GF_AUTH_GITHUB_ROLE_ATTRIBUTE_PATH
+              value: "contains(groups[*], '@chik4ge-homelab/admin') && 'GrafanaAdmin' || 'Viewer'"
