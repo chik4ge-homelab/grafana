@@ -56,7 +56,7 @@ spec:
             - name: GF_DATABASE_TYPE
               value: mysql
             - name: GF_DATABASE_HOST
-              value: mycluster
+              value: mysql
             - name: GF_DATABASE_USER
               valueFrom:
                 secretKeyRef:

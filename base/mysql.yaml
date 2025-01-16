@@ -1,7 +1,9 @@
 apiVersion: mysql.oracle.com/v2
 kind: InnoDBCluster
 metadata:
-  name: mycluster
+  labels:
+    app: grafana
+  name: mysql
 spec:
   secretName: mypwds
   tlsUseSelfSigned: true
